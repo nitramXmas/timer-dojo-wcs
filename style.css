@@ -35,22 +35,45 @@ body {
   justify-content: space-evenly;
 }
 
-.user-param,
-.color-param {
+.param {
   display: grid;
-  width: 40%;
-  grid-template-columns: 1fr;
+  width: 80%;
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(6, 1fr);
-  row-gap: 1vh;
+  gap: 1vh;
 }
 
-.user-param *,
-.color-param * {
+.param * {
   border: 2px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--cell-color);
+}
+
+.color-libele {
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+
+.user2 {
+  grid-column-start: 1;
+  grid-row-start: 3;
+}
+
+.user3 {
+  grid-column-start: 1;
+  grid-row-start: 4;
+}
+
+.user4 {
+  grid-column-start: 1;
+  grid-row-start: 5;
+}
+
+.user5 {
+  grid-column-start: 1;
+  grid-row-start: 6;
 }
 
 .footer {
