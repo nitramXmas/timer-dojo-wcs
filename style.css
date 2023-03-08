@@ -92,9 +92,37 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1.5em;
+  padding: 2em;
 }
 
 .go-button img {
   height: 100%;
+}
+
+/*==============================*/
+/* partie commune               */
+/*==============================*/
+input[type='range'].custom-slider.custom-slider-bullet {
+  -webkit-appearance: none;
+  height: 2em;
+  width: 50%;
+  color: #fff;
+  background: transparent;
+  background-image: linear-gradient(to bottom, #fff, #999, #fff);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 25%;
+}
+
+/*==============================*/
+/* le curseur                   */
+/*==============================*/
+input[type='range'].custom-slider.custom-slider-bullet::-webkit-slider-thumb {
+  width: 2em;
+  padding: 0.25em; /* largeur du bord */
+  border: 1px solid #888;
+  border-radius: 50%;
+  box-shadow: 0 0 0.5em #fff inset;
+  background: linear-gradient(#888, #fff) content-box,
+    /* le centre */ linear-gradient(-90deg, #888, #ddd) border-box; /* le bord */
 }
