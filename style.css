@@ -41,7 +41,7 @@ main {
   display: grid;
   width: 80%;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   gap: 1vh;
 }
 
@@ -50,36 +50,6 @@ main {
   background-color: var(--cell-color);
   font-size: 20px;
   text-align: center;
-}
-
-.color-libele {
-  grid-column-start: 2;
-  grid-row-start: 1;
-}
-
-.user1 {
-  grid-column-start: 1;
-  grid-row-start: 2;
-}
-
-.user2 {
-  grid-column-start: 1;
-  grid-row-start: 3;
-}
-
-.user3 {
-  grid-column-start: 1;
-  grid-row-start: 4;
-}
-
-.user4 {
-  grid-column-start: 1;
-  grid-row-start: 5;
-}
-
-.user5 {
-  grid-column-start: 1;
-  grid-row-start: 6;
 }
 
 .footer {
