@@ -47,9 +47,6 @@ main {
 
 .param * {
   border: 2px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: var(--cell-color);
   font-size: 20px;
   text-align: center;
