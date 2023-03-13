@@ -71,6 +71,17 @@ main {
   height: clamp(30px, 100%, 120px);
 }
 
+button {
+  background-size: contain;
+  background-position: center;
+  background-color: var(--bg-color);
+  border: none;
+}
+
+img {
+  height: 100%;
+}
+
 /*==============================*/
 /* partie commune               */
 /*==============================*/
