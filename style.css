@@ -60,31 +60,35 @@ main {
   justify-content: space-around;
 }
 
-.users {
+.input-param {
   display: flex;
   justify-content: space-around;
   align-content: flex-start;
   flex-wrap: wrap;
   gap: 2.5vh;
   width: 80vw;
+  min-height: 4vh;
 }
 
-.users * {
+.input-param * {
   background-color: var(--cell-color);
-  font-size: 25px;
-  text-align: center;
+  font-size: 12.5px;
   width: 35vw;
 }
 
 input {
   border: none;
-  height: 3vh;
+  height: 4vh;
 }
 
-#btn-add {
+.buttonAddDel {
   border: none;
-  background-color: var(--bg-color);
-  height: 3vh;
+  height: 4vh;
+}
+
+.btn-add,
+.btn-del {
+  height: 100%;
 }
 
 .footer {
@@ -106,14 +110,7 @@ input {
   height: clamp(30px, 100%, 120px);
 }
 
-button {
-  background-size: contain;
-  background-position: center;
-  background-color: var(--bg-color);
-  border: none;
-}
-
-img {
+#btn-start {
   height: 100%;
 }
 
