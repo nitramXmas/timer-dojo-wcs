@@ -16,9 +16,9 @@ let colors = document.querySelectorAll('.input-color'); */
  */
 addButton.addEventListener('click', function () {
   let newUser = document.createElement('input');
-  newUser = firstUser;
-  console.log(newUser);
+  let newColor = document.createElement('input');
   users.appendChild(newUser);
+  users.appendChild(newColor);
 });
 
 /**
@@ -32,7 +32,7 @@ startButton.addEventListener('click', function () {
   counterView.style.backgroundColor = colors[0].value;
 });
 
-//Sortie de l'overlay si on cliaue dessus - a modifier avec un bouton d'exit
+//Sortie de l'overlay si on clique dessus - a modifier avec un bouton d'exit
 //preventDefault pour eviter de reset la saisie des users
 overlay.addEventListener('click', function (e) {
   e.preventDefault;

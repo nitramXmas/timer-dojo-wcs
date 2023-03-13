@@ -54,7 +54,7 @@ body {
 }
 
 main {
-  height: 70vh;
+  /*   height: 70vh; */
   width: 100vw;
   display: flex;
   justify-content: space-around;
@@ -62,11 +62,11 @@ main {
 
 .users {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  align-content: flex-start;
   flex-wrap: wrap;
+  gap: 2.5vh;
   width: 80vw;
-  height: 100%;
 }
 
 .users * {
@@ -78,15 +78,13 @@ main {
 
 input {
   border: none;
+  height: 3vh;
 }
 
-.page div {
-  border: none;
-  height: 5vh;
-}
 #btn-add {
   border: none;
   background-color: var(--bg-color);
+  height: 3vh;
 }
 
 .footer {
