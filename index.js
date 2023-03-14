@@ -4,10 +4,19 @@ const delButton = document.querySelector('#btn-del'); //bouton d'ajout utilisate
 let overlay = document.querySelector('.overlay'); //div avec la classe overlay
 let counterView = document.querySelector('#counter'); //la div du compteur
 let inputParam = document.querySelector('.input-param'); //la div contenant les inputs user et color
-const firstUser = document.querySelector('.input-user'); //selection du premier input user
-const firstColor = document.querySelector('.input-color'); //selection du premier input color
 
-//Selection de tous les inputs -> a ameliorer avec um object contenant le couple user/color
+//2 input de base avec utilisation d'un formulaire pour avoir l'evenement submit (bouton vert)
+//sur le clic, creation d'un nouvel objet avec les saisies + creation de 2 nouyveau inputs avec un submit
+//il faut utiliser un formulaire pour
+
+class userParam {
+  constructor(name, color) {
+    this.name = name;
+    this.color = color;
+  }
+}
+
+let param1 = new userParam();
 
 /**
  * Fonction ajout d'utilisateur
@@ -15,33 +24,18 @@ const firstColor = document.querySelector('.input-color'); //selection du premie
 addButton.addEventListener('click', function () {
   let newUser = document.createElement('input');
   let newColor = document.createElement('input');
-  newUser = firstUser.cloneNode(true);
-  newColor = firstColor.cloneNode(true);
   inputParam.appendChild(newUser);
   inputParam.appendChild(newColor);
 });
 
 /**
  * Fonction supression d'utilisateur
- * ameliorable avec objet ? + declanche une erreur dans la console
  */
-
-delButton.addEventListener('click', function () {
-  let users = document.querySelectorAll('.input-user');
-  let colors = document.querySelectorAll('.input-color');
-  for (let cptDel = users.length - 1; cptDel > 0; cptDel++) {
-    users[cptDel].remove();
-    colors[cptDel].remove();
-  }
-});
-
-console.log(document.querySelectorAll('.input-user'));
-console.log(document.querySelectorAll('.input-color'));
+delButton.addEventListener('click', function () {});
 
 /**
  * Fonction daffichage de l'overlay au clic sur le bouton de demarrage
  */
-
 startButton.addEventListener('click', function () {
   overlay.style.display = 'flex';
   //modification du contenu avec l'utilisateur et la couleur de fond -> a ameliorer avec un objets
